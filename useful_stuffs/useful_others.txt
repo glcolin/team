@@ -1,0 +1,2 @@
+- Digital Ocean
+- Dreamhost private virtual server
