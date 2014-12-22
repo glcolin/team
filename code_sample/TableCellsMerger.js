@@ -2,6 +2,8 @@
  * Created by Colin Zhao
  * glcolin@hotmail.com
  * Date: 12/10/2014
+ * Last Updated: 12/22/2014
+ * Version: 1.02
  * @param an array of column indexes
  * @return void
  * by calling this plugin, the table cells will be merged intelligently.
@@ -72,7 +74,7 @@
 			//Merge cells:
 			for (var i=0; i<arr.length; i++){
 				//Get object of first row:
-				var cell = new Cell(this.find('tbody tr:eq(0)').find('td:eq('+i+')'));
+				var cell = new Cell(this.find('tbody tr:eq(0)').find('td:eq('+arr[i]+')'));
 				//Loop through rows:
 				do{
 					var rows = $('td[data-marker='+cell.getMarker()+']');
